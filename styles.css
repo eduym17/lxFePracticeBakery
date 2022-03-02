@@ -1,0 +1,141 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  font-family: 'Cabin', sans-serif;
+}
+
+body {
+  background: gray;
+}
+
+header {
+  background: #492C79;
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  font-size: large;
+  font-weight: 600;
+  overflow: hidden;
+}
+
+header > div > img {
+  height: 6vh;
+}
+
+.navbar {
+  color: white;
+  display: flex;
+  gap: 30px;
+}
+
+main {
+  background: #dad4e4;
+  color: #150d24;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5vw;
+  height: 80vh;
+  overflow: hidden;
+  padding-top: 10px;
+  width: 100vw;
+}
+
+.leftside > label {
+  align-self: flex-start;
+}
+
+.input {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+textarea {
+  width: 100%;
+  text-align: left;
+  color: #492c79;
+}
+
+.leftside {
+  display: flex;
+  flex-direction: column;
+  width: 30vw;
+}
+
+.rightside {
+  width: 20vw;
+}
+
+.flavours {
+  padding-bottom: 25px;
+}
+
+.flavours > p {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.topings > p {
+  padding-bottom: 10px;
+  font-weight: 600;
+}
+
+.flavour, .toping {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.flavour > p {
+  opacity: .5;
+}
+
+.toping > p {
+  opacity: .5;
+}
+
+.quantity {
+  justify-self: start;
+}
+
+.checkbox {
+  border: 1px solid red;
+}
+
+footer {
+  background: #00c9a8;
+  color: #150d24;
+  height: 10vh;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-weight: 400;
+  overflow: hidden;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.launchx {
+  font-weight: 800;
+}
+
+.info {
+  display: flex;
+  gap: 20px;
+}

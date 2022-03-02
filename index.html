@@ -2,14 +2,107 @@
 <html lang="en">
 <head>
   <link rel="stylesheet" href="styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Bakery | LaunchX</title>
 </head>
 <body>
-  <header></header>
-  <main></main>
-  <footer></footer>
+  <header>
+    <div class="logo">
+      <img src="./assets/icons/Master Cake.png" alt="Master Cake">
+    </div>
+    <div class="navbar">
+      <p>Home</p>
+      <p>Cakes</p>
+      <p>Orders</p>
+      <p>Contact</p>
+    </div>
+  </header>
+  <main>
+    <div class="form">
+      <div class="leftside">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Write yor name here" class="input">
+        <label for="tel">Telephone:</label>
+        <input type="tel" id="tel" placeholder="You cellphone here" class="input">
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="And your email here" class="input">
+        <label for="description">Description:</label>
+        <textarea id="description" name="description" rows="5" cols="40" placeholder="Do you have something special on mind?" class="input">
+        </textarea>
+      </div>
+      <div class="rightside">
+        <div class="flavours">
+          <p>Flavours</p>
+          <div class="flavour">
+            <div>
+              <input type="checkbox" name="chocolate" id="chocolate" class="checkbox">
+              <label for="chocolate">Chocolate +$5</label>
+            </div>
+            <p class="quantity">25 left</p>
+          </div>
+          <div class="flavour">
+            <div>
+              <input type="checkbox" name="Strawberry" id="Strawberry" class="checkbox">
+              <label for="Strawberry">Strawberry +$5</label>
+            </div>
+            <p class="quantity">20 left</p>
+          </div>
+          <div class="flavour">
+            <div>
+              <input type="checkbox" name="Moka" id="Moka" class="checkbox">
+              <label for="Moka">Moka +$5</label>
+            </div>
+            <p class="quantity">15 left</p>
+          </div>
+          <div class="flavour">
+            <div>
+              <input type="checkbox" name="Blueberry" id="Blueberry" class="checkbox">
+              <label for="Blueberry">Blueberry +$5</label>
+            </div>
+            <p class="quantity">10 left</p>
+          </div>
+        </div>
+        <div class="topings">
+          <p>Topings</p>
+          <div class="toping">
+            <div>
+              <input type="checkbox" name="Almonds" id="Almonds" class="checkbox">
+              <label for="Almonds">Almonds +$5</label>
+            </div>
+            <p class="quantity">25 left</p>
+          </div>
+          <div class="toping">
+            <div>
+              <input type="checkbox" name="Walnuts" id="Walnuts" class="checkbox">
+              <label for="Walnuts">Walnuts +$5</label>
+            </div>
+            <p class="quantity">20 left</p>
+          </div>
+          <div class="toping">
+            <div>
+              <input type="checkbox" name="Oreo" id="Oreo" class="checkbox">
+              <label for="Oreo">Oreo +$5</label>
+            </div>
+            <p class="quantity">15 left</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <div class="details">
+      <p>CDMX, 5512341234, M-F: 08:00-18:00</p>
+      <p class="launchx">LaunchX practice</p>
+    </div>
+    <div class="info">
+      <p>Investors</p>
+      <p>Happy clients</p>
+      <p>About us</p>
+    </div>
+  </footer>
 </body>
 </html>
