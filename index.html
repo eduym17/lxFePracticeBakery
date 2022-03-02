@@ -11,7 +11,9 @@
 <body>
   <header>
     <div class="logo">
-      <img src="./assets/icons/Master Cake.png" alt="Master Cake">
+      <a href="./index.html">
+        <img src="./assets/icons/Master Cake.png" alt="Master Cake">
+      </a>
     </div>
     <div class="navbar">
       <p>Home</p>
@@ -21,7 +23,7 @@
     </div>
   </header>
   <main>
-    <div class="form">
+    <form action="./order.html" method="GET" class="form" id="form">
       <div class="leftside">
         <label for="name">Name:</label>
         <input type="text" id="name" placeholder="Write yor name here" class="input">
@@ -30,8 +32,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" placeholder="And your email here" class="input">
         <label for="description">Description:</label>
-        <textarea id="description" name="description" rows="5" cols="40" placeholder="Do you have something special on mind?" class="input">
-        </textarea>
+        <textarea id="description" name="description" rows="5" cols="40" placeholder="Do you have something special on mind?" class="input"></textarea>
       </div>
       <div class="rightside">
         <div class="flavours">
@@ -88,10 +89,26 @@
             </div>
             <p class="quantity">15 left</p>
           </div>
+          <div class="toping">
+            <div>
+              <input type="checkbox" name="coconut" id="coconut" class="checkbox">
+              <label for="coconut">Coconut  +$5</label>
+            </div>
+            <p class="quantity">10 left</p>
+          </div>
+          <div class="toping">
+            <div>
+              <input type="checkbox" name="honey" id="honey" class="checkbox">
+              <label for="honey">Honey  +$5</label>
+            </div>
+            <p class="quantity">5 left</p>
+          </div>
+        </div>
+        <div class="button">
+          <button type="submit">Enviar</button>
         </div>
       </div>
-    </div>
-
+    </form>
   </main>
   <footer>
     <div class="details">
@@ -102,7 +119,10 @@
       <p>Investors</p>
       <p>Happy clients</p>
       <p>About us</p>
+      <p>&copy; Eduardo Yañez</p>
     </div>
   </footer>
+  <script src="./order.js">
+  </script>
 </body>
 </html>

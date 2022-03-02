@@ -6,10 +6,6 @@
   font-family: 'Cabin', sans-serif;
 }
 
-body {
-  background: gray;
-}
-
 header {
   background: #492C79;
   height: 10vh;
@@ -21,7 +17,7 @@ header {
   overflow: hidden;
 }
 
-header > div > img {
+header > div > a > img {
   height: 6vh;
 }
 
@@ -59,12 +55,25 @@ main {
 .input {
   width: 100%;
   margin-bottom: 10px;
+  border-radius: 20px;
+  padding-left: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  border: 2px solid #492C79;
+}
+
+.input:hover, .input:focus {
+  background: #492C79;
+  color: white;
+  border: 2px solid #00c9a8;
 }
 
 textarea {
   width: 100%;
   text-align: left;
   color: #492c79;
+  min-width: 30vw;
+  max-width: 30vw;
 }
 
 .leftside {
@@ -75,15 +84,46 @@ textarea {
 
 .rightside {
   width: 20vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+button {
+  margin-top: 30px;
+  height: 3rem;
+  width: 8rem;
+  background: #492C79;
+  border: 2px solid #492C79;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  font-size: large;
+}
+
+button:hover {
+  background: #331e54;
+  border: 2px solid #00c9a8;
+  border-radius: 50px;
+  color: white;
+  font-weight: 600;
 }
 
 .flavours {
-  padding-bottom: 25px;
+  padding-bottom: 15px;
+  align-self: flex-start;
+  width: 100%;
 }
 
 .flavours > p {
   padding-bottom: 10px;
   font-weight: 600;
+}
+
+.topings {
+  align-self: flex-start;
+  width: 100%;
 }
 
 .topings > p {
@@ -104,14 +144,6 @@ textarea {
 
 .toping > p {
   opacity: .5;
-}
-
-.quantity {
-  justify-self: start;
-}
-
-.checkbox {
-  border: 1px solid red;
 }
 
 footer {
@@ -138,4 +170,8 @@ footer {
 .info {
   display: flex;
   gap: 20px;
+}
+
+.submitmsg {
+  font-size: 7rem;
 }
